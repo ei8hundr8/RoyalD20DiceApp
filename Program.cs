@@ -3,7 +3,8 @@
 Random random = new Random();
 
 Console.WriteLine("--- Royal D20 Dice Roller - Version 1.0 ---");
-Console.Write("Press Enter to roll the D20!");
+Console.Write("Press Enter to roll the D20!\n");
+Console.WriteLine("Good luck, brave knight!");
 Console.ReadLine();
 
 // Generate a random number between 1 and 20 (inclusive)
