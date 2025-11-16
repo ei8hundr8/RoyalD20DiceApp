@@ -1,7 +1,8 @@
 ﻿// Simple D20 Dice Roller App
+// V1.0 - Initial Release
 Random random = new Random();
 
-Console.WriteLine("--- Royal D20 Dice Roller ---");
+Console.WriteLine("--- Royal D20 Dice Roller - Version 1.0 ---");
 Console.Write("Press Enter to roll the D20!");
 Console.ReadLine();
 
