@@ -1,8 +1,10 @@
 ﻿// Simple D20 Dice Roller App
-// V1.0 - Initial Release
+// V1.1 - Add version check
+const string VERSION = "1.1";
 Random random = new Random();
 
-Console.WriteLine("--- Royal D20 Dice Roller - Version 1.0 ---");
+Console.WriteLine("--- Royal D20 Dice Roller ---");
+Console.WriteLine($"App version: {VERSION}\n");
 Console.Write("Press Enter to roll the D20!\n");
 Console.WriteLine("Good luck, brave knight!");
 Console.ReadLine();
