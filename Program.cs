@@ -1,27 +1,42 @@
 ﻿// Simple D20 Dice Roller App
-// V1.1 - Add version check
+// Version 1.1 - Added Version Check
 const string VERSION = "1.1";
+
 Random random = new Random();
+bool keepPlaying = true;
 
-Console.WriteLine("--- Royal D20 Dice Roller ---");
-Console.WriteLine($"App version: {VERSION}\n");
-Console.Write("Press Enter to roll the D20!\n");
-Console.WriteLine("Good luck, brave knight!");
-Console.ReadLine();
-
-// Generate a random number between 1 and 20 (inclusive)
-int roll = random.Next(1, 21);
-
-Console.WriteLine($"\n** YOU ROLLED A {roll}! **");
-
-if (roll == 20)
+while (keepPlaying)
 {
-	Console.WriteLine("CRITICAL SUCCESS! The crowd cheers for the brave knight!");
+    Console.Clear(); // Clear the screen for a fresh roll
+    Console.WriteLine("--- Royal D20 Dice Roller ---");
+    Console.WriteLine($"App Version: {VERSION}");
+    Console.WriteLine("Good luck, brave knight!");
+    Console.Write("Press Enter to roll the D20!");
+    Console.ReadLine();
+
+    // Generate a random number between 1 and 20 (inclusive)
+    int roll = random.Next(1, 21); 
+
+    Console.WriteLine($"\n** YOU ROLLED A {roll}! **");
+
+    if (roll == 20)
+    {
+        Console.WriteLine("CRITICAL SUCCESS! The crowd cheers for the brave knight!");
+    }
+    else if (roll == 1)
+    {
+        Console.WriteLine("CRITICAL FAILURE! Oh no, the dice fell off the table!");
+    }
+    Console.WriteLine("-----------------------------");
+
+    // Ask the user to play again
+    Console.Write("Roll again? (Y/n): ");
+    string? choice = Console.ReadLine();
+
+    if (choice?.ToLower() == "n")
+    {
+        keepPlaying = false;
+    }
 }
-else if (roll == 1)
-{
-	Console.WriteLine("CRITICAL FAILURE! Oh no, the dice fell off the table, my knight!");
-}
-Console.WriteLine("-----------------------------");
-Console.WriteLine("Press Enter to exit.");
-Console.ReadLine();
+
+Console.WriteLine("Thank you for playing!");
