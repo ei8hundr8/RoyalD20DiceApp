@@ -2,7 +2,8 @@
 // Version 1.1 - Added Version Check
 const string VERSION = "1.1";
 
-Random random = new Random();
+// Create our D20 die one time
+Dice d20 = new Dice(20);
 bool keepPlaying = true;
 
 while (keepPlaying)
@@ -14,8 +15,8 @@ while (keepPlaying)
     Console.Write("Press Enter to roll the D20!");
     Console.ReadLine();
 
-    // Generate a random number between 1 and 20 (inclusive)
-    int roll = random.Next(1, 21); 
+    // Use our new Dice class to roll!
+    int roll = d20.Roll(); 
 
     Console.WriteLine($"\n** YOU ROLLED A {roll}! **");
 
