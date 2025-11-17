@@ -16,7 +16,7 @@ Console.WriteLine($"\n** YOU ROLLED A {roll}! **");
 
 if (roll == 20)
 {
-	Console.WriteLine("CRITICAL SUCCESS! A roll worthy of a knight!");
+	Console.WriteLine("CRITICAL SUCCESS! The crowd cheers for the brave knight!");
 }
 else if (roll == 1)
 {
