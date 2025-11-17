@@ -20,7 +20,7 @@ if (roll == 20)
 }
 else if (roll == 1)
 {
-	Console.WriteLine("CRITICAL FAILURE! Better luck next time!");
+	Console.WriteLine("CRITICAL FAILURE! A disastrous roll, my knight!");
 }
 Console.WriteLine("-----------------------------");
 Console.WriteLine("Press Enter to exit.");
