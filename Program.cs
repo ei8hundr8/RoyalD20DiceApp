@@ -20,7 +20,7 @@ if (roll == 20)
 }
 else if (roll == 1)
 {
-	Console.WriteLine("CRITICAL FAILURE! Oh no, the dice fell off the table!");
+	Console.WriteLine("CRITICAL FAILURE! Oh no, the dice fell off the table, my knight!");
 }
 Console.WriteLine("-----------------------------");
 Console.WriteLine("Press Enter to exit.");
